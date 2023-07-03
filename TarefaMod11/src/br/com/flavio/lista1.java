@@ -10,7 +10,6 @@ public class lista1 {
 		}
 	
 	private static void lista() {
-		int cont=0;
 		String nomes;
 		
 		List <String> lista = new LinkedList<String> ();
@@ -27,18 +26,8 @@ public class lista1 {
 			System.out.println("Deseja acrescentar um nome?");
 			String novaResposta = ler.next();
 			resposta=novaResposta;
-			cont=cont++;
-		}	
-		System.out.println("\nA sua lista é: \n");
-			
-		/* Tentativa de lista verticalizada...
-			for (int i=0; i<nomes.length;i++) {
-				if(nomes[i].equals(null)) {
-					nomes[i]="";
-				}*/
-				System.out.println(lista);
-				
+		}
+		Collections.sort(lista);
+		System.out.println("\nA sua lista é: \n"+lista);
 			}
 		}
-	
-	
